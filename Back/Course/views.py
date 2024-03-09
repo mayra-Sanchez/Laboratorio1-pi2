@@ -60,6 +60,7 @@ class List(APIView):
 
 
 class Register(APIView):
+    serializer_class = CourseSerializer
     def post(self, request, format=None):
         serializer = CourseSerializer(data=request.data)
         if serializer.is_valid():
