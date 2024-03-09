@@ -1,4 +1,4 @@
-Para hacer ejecutar localmente, crear un archivo .env en la carpeta "lab1_pi2" y añadir lo siguiente:
+Para ejecutar localmente, crear un archivo .env en la carpeta "lab1_pi2" y añadir lo siguiente:
 
  DB_NAME=db_name  
  DB_USER=postgres  
