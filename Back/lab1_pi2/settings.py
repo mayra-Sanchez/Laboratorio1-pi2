@@ -64,7 +64,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://tutor-virtual-ten.vercel.app',
+    'https://tutor-virtual-ten.vercel.app/',
 ]
 
 ROOT_URLCONF = 'lab1_pi2.urls'
