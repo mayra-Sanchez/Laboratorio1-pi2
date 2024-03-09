@@ -2,3 +2,5 @@ django
 openai
 djangorestframework
 django-cors-headers
+psycopg2
+python-dotenv
