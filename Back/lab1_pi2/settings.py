@@ -91,19 +91,18 @@ WSGI_APPLICATION = 'lab1_pi2.wsgi.application'
 
 DATABASES = {
     #uncomment these lines to test the api locally and comment the lines below 
-    """
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv( 'DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_CONTAINER_NAME', 'localhost'),
-        'PORT': os.getenv('DB_PORT','5432'),
-    }
-    """
-    #comment these lines if you run the api locally 
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    #'default': {
+    #    'ENGINE': 'django.db.backends.postgresql',
+    #    'NAME': os.getenv('DB_NAME'),
+    #    'USER': os.getenv( 'DB_USER'),
+    #    'PASSWORD': os.getenv('DB_PASSWORD'),
+    #    'HOST': os.getenv('DB_CONTAINER_NAME', 'localhost'),
+    #    'PORT': os.getenv('DB_PORT','5432'),
+    #}
 
+    #comment this line if you run the api locally 
+
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
