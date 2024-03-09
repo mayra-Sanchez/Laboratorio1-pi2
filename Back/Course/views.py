@@ -77,6 +77,7 @@ class Register(APIView):
     
 
 class Chat(APIView):
+    serializer_class = QuestionSerializer
     def post(self, request, pk):
         serializer = QuestionSerializer(data=request.data)
         if serializer.is_valid():
