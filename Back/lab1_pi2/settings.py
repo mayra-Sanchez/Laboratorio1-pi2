@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-wrrt&&%8t0#x(ttgmfqk72e@o3(&&zzy_gdf)0gml3fn%%oitv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://laboratorio1-pi2.onrender.com']
 
 
 
@@ -64,6 +64,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://tutor-virtual-ten.vercel.app',
 ]
 
 ROOT_URLCONF = 'lab1_pi2.urls'
