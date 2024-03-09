@@ -1,11 +1,10 @@
-Para hacer ejecutar localmente:
-Crear un archivo .env en la carpeta "lab1_pi2" y añadir los siguiente:
+Para hacer ejecutar localmente, crear un archivo .env en la carpeta "lab1_pi2" y añadir lo siguiente:
 
-DB_NAME=db_name
-DB_USER=postgres
-DB_PASSWORD=db_password
-DB_HOST=127.0.0.1
-DB_PORT=5432
+ DB_NAME=db_name  
+ DB_USER=postgres  
+ DB_PASSWORD=db_password  
+ DB_HOST=127.0.0.1  
+ DB_PORT=5432  
 
 en la misma carpeta ir al archivo settings.py y buscar el apartado "DATABASES" y descomentar las líneas que ahí se indican.
 
@@ -15,5 +14,5 @@ postgres=# CREATE DATABASE db_name;
 
 Luego crear y aplicar las migraciones
 
-python manage.py makemigrations
-python manage.py migrate
+ python manage.py makemigrations  
+ python manage.py migrate
