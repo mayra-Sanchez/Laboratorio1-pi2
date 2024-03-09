@@ -102,9 +102,7 @@ DATABASES = {
     }
     """
     #comment these lines if you run the api locally 
-    'default': {
-        'ENGINE': dj_database_url.parse(os.environ.get("DATABASE_URL")),
-    }
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 
 }
 
