@@ -14,6 +14,8 @@ import os
 
 from pathlib import Path
 
+import dj_database_url 
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -88,6 +90,8 @@ WSGI_APPLICATION = 'lab1_pi2.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+    #uncomment these lines to test the api locally and comment the lines below 
+    """
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('DB_NAME'),
@@ -96,6 +100,12 @@ DATABASES = {
         'HOST': os.getenv('DB_CONTAINER_NAME', 'localhost'),
         'PORT': os.getenv('DB_PORT','5432'),
     }
+    """
+    #comment these lines if you run the api locally 
+    'default': {
+        'ENGINE': dj_database_url.parse(os.environ.get("DATABASE_URL")),
+    }
+
 }
 
 # Password validation
